@@ -5,7 +5,7 @@ const FilterMovies = () => {
     const applyFilters = () => {
         fetchMovies().then(((movies)=> {
             const selectedGenre = document.getElementById("genre").value;
-            const filteredMovies = movies.filter((movie) => movie.genre == selectedGenre || selectedGenre == "");
+            const filteredMovies = movies.filter((movie) => movie.genre === selectedGenre || selectedGenre === "");
             setMovies(filteredMovies);
         }))
     }

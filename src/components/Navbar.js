@@ -6,7 +6,7 @@ function Navbar() {
                     <ul>
                         <li><a href="/">About</a></li>
                         <li><a href="/movies">Movie Library</a></li>
-                        <li><a href="/">Add Movie</a></li>
+                        <li><a href="addmovie">Add Movie</a></li>
                     </ul>
                 </nav>
             </header>

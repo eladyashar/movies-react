@@ -16,7 +16,18 @@ export function MoviesProvider({children}) {
     })
   },[]);
 
-  const value = { movies, setMovies, fetchMovies };
+  const addMovie = async (movieData) => {
+    return fetch("http://localhost:3000/movies", 
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(movieData)
+     })
+  }
+
+  const value = { movies, setMovies, fetchMovies, addMovie };
   return (
       <MoviesContext.Provider value={value}>
         {children}
