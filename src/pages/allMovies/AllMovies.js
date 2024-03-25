@@ -1,7 +1,7 @@
 
-import FilterMovies from '../components/FilterMovies';
-import MovieLibrary from '../components/MovieLibrary';
-const MoviesPage = () => {
+import FilterMovies from './components/FilterMovies';
+import MovieLibrary from './components/MovieLibrary'
+const AllMovies = () => {
     return (
         <>
             <aside>
@@ -13,4 +13,4 @@ const MoviesPage = () => {
         </>
     )
 }
-export default MoviesPage;
+export default AllMovies;

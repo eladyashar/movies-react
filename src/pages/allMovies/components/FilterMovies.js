@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { MoviesContext } from "../providers/movies-provider";
+import { MoviesContext } from "../../../providers/movies-provider";
 const FilterMovies = () => {
     const {setMovies, fetchMovies} = useContext(MoviesContext);
     const applyFilters = () => {

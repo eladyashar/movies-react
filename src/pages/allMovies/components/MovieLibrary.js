@@ -1,5 +1,5 @@
 import Movie from './Movie';
-import { MoviesContext } from '../providers/movies-provider';
+import { MoviesContext } from '../../../providers/movies-provider';
 import { useState, useEffect, useContext } from 'react';
 const MovieLibrary = () => {
     const {movies} = useContext(MoviesContext);

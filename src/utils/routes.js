@@ -1,8 +1,8 @@
 import {createBrowserRouter} from "react-router-dom";
-import MoviesPage from "./pages/MoviesPage";
-import About from "./pages/About";
-import App from "./App";
-import AddMovie from "./pages/AddMovie";
+import AllMovies from "../pages/allMovies/AllMovies";
+import About from "../pages/about";
+import App from "../app/App";
+import AddMovieForm from "../pages/addMovieForm/AddMovieForm";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -14,11 +14,11 @@ export const router = createBrowserRouter([
         },
         {
           path: '/movies',
-          element: <MoviesPage />
+          element: <AllMovies />
         },
         {
           path: '/addmovie',
-          element: <AddMovie />
+          element: <AddMovieForm />
         }
       ],
     },
